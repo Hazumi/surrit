@@ -1,26 +1,261 @@
+/* GENERAL */
 body {
-  background-color: #2f343a;
+  background-color: #f8f9fa;
+  color: #222;
   font-size: 16px;
   font-family: 'Open Sans', sans-serif;
-  color: #f7f7f8;
   text-align: center;
 }
 
-.logo {
-  font-size: 4em;
-  font-family: 'Vampiro One', cursive;
-  background: linear-gradient(330deg, #99e052 25%, #52e0e0 50%, #9952e0 75%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-align: center;
+h1 {
+  font-family: 'Orbitron', sans-serif;
+  letter-spacing: 2px;
+  font-size: 2em;
+  // text-shadow: 2px 2px 6px #0a0a0a;
+  text-transform: uppercase;
 }
 
-.sub-logo {
+h2 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  box-shadow: -10px -10px 0px 0px #fff;
+  margin: 0 auto 1em auto;
+  padding: 0.2em;
+  color: #f8f8f8;
+  background-color: rgba(0,0,0,0.9);
+  width: 200px;
+  transform: rotate(-5deg) skew(-5deg);
+}
+
+h3 {
+  font-family: 'Baloo Bhaijaan', cursive;
+  color: #222;
+  font-size: 1.6em;
+}
+
+h4 {
   font-size: 1em;
-  font-family: 'Open Sans', sans-serif;
-  color: #f7f7f8;
+  font-weight: 700;
 }
 
-.coming-soon {
-  margin: 4em;
+section {
+  // padding: 2em;
+}
+
+/* HEADER */
+.navbar {
+  background-color: #0b1336;
+}
+
+a.navbar-brand {
+  color: #f8f8f8;
+  padding: 0.75em;
+  span {
+    font-family: monospace;
+    letter-spacing: 4px;
+  }
+}
+
+a.nav-link {
+  padding: 0.75em;
+  color: #fff;
+  font-family: monospace;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  &:hover {
+    color: #dee3f5;
+  }
+}
+
+header {
+  background-color: #0b1336;
+  box-shadow: 0 0 3px 0;
+}
+
+.icons {
+  margin-bottom: 0.5em;
+  width: 100px;
+}
+
+.hero {
+  background-image: url(../img/header-bg.png);
+  background-size: cover;
+  height: 400px;
+  color: #f8f8f8;
+  a {
+    border-radius: 50px;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 0.5em 1.5em;
+  }
+  a:hover {
+    text-decoration: none;
+  }
+}
+
+.hero-content {
+  padding-top: 3em;
+}
+
+@media screen and (max-width: 991px) {
+  .hero-content {
+    padding-top: 2em;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  h1 {
+    font-size: 1.5em;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .hero-content {
+    padding-top: 1.5em;
+  }
+}
+
+/* SECTION - 3 MAIN COLUMNS */
+.columns-main {
+  margin-top: 9em;
+  margin-bottom: 2em;
+  border-radius: 50%;
+}
+
+@media screen and(max-width: 575px) {
+  .columns-main {
+    margin-top: 11em;
+    margin-bottom: 2em;
+  }
+}
+
+/* SECTION - GAMES */
+.games-top {
+  width: 100%;
+}
+.games {
+  background-color: #2e9ff6;
+  color: #f8f8f8;
+  h2 {
+    position: relative;
+    bottom: 1em;
+  }
+  h3 {
+    color: #f8f8f8;
+  }
+  p {
+    font-size: 1.1em;
+  }
+}
+.game-info {
+  // margin: 0 15px;
+  background-color: rgba(0,0,0,0.15);
+  padding: 2em;
+  border: 3px solid rgba(0,0,0,0.1);
+  text-align: left;
+  border-radius: 16px;
+}
+
+@media screen and (max-width: 990px) {
+  .game-info {
+    margin: 1em auto;
+    max-width: 480px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .game-info {
+    margin: 1em 15px;
+  }
+  .game-img {
+
+  }
+}
+
+.game-img {
+  // border: 4px solid rgba(255,255,255,0.5);
+  border-radius: 4px;
+}
+
+/* SECTION - COMPANY */
+.company {
+  background-color: #f7f9fa;
+  h2 {
+    margin: 2em auto;
+    box-shadow: none;
+  }
+}
+.avatar {
+  margin-bottom: 1em;
+  border-radius: 50%;
+}
+
+/* SECTION - CONTACT */
+.contact {
+  padding-top: 2em;
+  background-image: url(../img/footer-bg.png);
+  background-size: cover;
+  color: #fff;
+  input,
+  select {
+    margin: 0 0.25em;
+    width: 225px;
+    height: 2.5em;
+    border-radius: 8px;
+  }
+  textarea {
+    width: 450px;
+    height: 6em;
+  }
+  input,
+  select,
+  textarea {
+    border-radius: 8px;
+    border: 2px solid rgba(0,0,0,0.4);
+    color: #fff;
+
+    background-color: rgba(0,0,0,0.15);
+
+
+
+    // background-color: rgba(0,0,0,0.15);
+    padding: 1em;
+    // border: 4px solid rgba(0,0,0,0.1);
+    // text-align: left;
+    // border-radius: 16px;
+  }
+}
+
+.input-wrap {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+textarea {
+  display: block;
+  width: 300px;
+}
+
+footer {
+  padding: 0.5em;
+  background-color: #0b1336;
+  color: #fff;
+  font-size: 0.9em;
+  p {
+    margin: 0 ;
+  }
+  p:nth-of-type(2) {
+    color: #ccc;
+    font-style: italic;
+    font-size: 0.9em;
+  }
+  a {
+    color: #fff;
+  }
+  a:hover {
+    text-decoration: none;
+    color: #fff;
+  }
 }

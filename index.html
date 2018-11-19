@@ -2,51 +2,196 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Surrit</title>
+    <title>Surrit Studios</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/main.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Vampiro+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhaijaan|Open+Sans:400,700|Orbitron" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" />
   </head>
-
   <body>
 
-  <nav class="navbar navbar-expand-md navbar-light bg-light">
-  <a class="navbar-brand" href="#">Surrit</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+    <header>
+      <div class="container">
+        <nav class="navbar navbar-expand-md p-2">
+          <a class="navbar-brand" href="#"><span>surrit<span>:スタジオ</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="tutorials.html">Tutorials</a>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Community
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Something else here</a>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#">News</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#games">Games</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#company">Company</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="container hero-content">
+        <h1>Taking gamified learning<br> to new heights</h1>
+        <p>We, at Surrit Studios, are working hard to bridge the gap between gaming and learning. By making games educational, we believe that we can help you exceed goals and have fun doing it.</p>
+      </div>
+      <!-- <a href="#">read more</a> -->
+      <img class="animated fadeInUp ship" src="img/ship.png" alt="Spaceship">
+    </section>
+
+    <section class="columns-main container">
+      <div class="row">
+        <div class="col-sm-4">
+          <img class="icons img-fluid" src="img/icons/gaming.png" alt="Gaming">
+          <div class="h2-bg">
+            <h3 class="m-0">Gaming</h3>
+          </div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim </p>
         </div>
-      </li>
+        <div class="col-sm-4">
+          <img class="icons img-fluid" src="img/icons/blackboard.png" alt="Learning">
+          <div class="h2-bg">
+            <h3 class="m-0">Learning</h3>
+          </div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim </p>
+        </div>
+        <div class="col-sm-4">
+          <img class="icons img-fluid" src="img/icons/success.png" alt="Success">
+          <div class="h2-bg">
+            <h3 class="m-0">Success</h3>
+          </div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim </p>
+        </div>
+      </div>
+    </section>
 
-  </div>
-</nav>
+    <img class="games-top" id="games" src="img/games-top.png" alt="">
+    <section class="games">
+      <h2>Games</h2>
+      <div class="game container">
+        <div class="row">
+          <div class="col-lg-6">
+            <img class="img-fluid game-img" src="img/games/hello-kana.png" alt="Hello Kana">
+          </div>
+          <div class="col-lg-6 game-info">
+            <h3 class="text-center">Hello Kana</h3>
+            <p><strong>Status:</strong> In Development</p>
+            <p><strong>Platform(s):</strong> Web</p>
+            <p><strong>Description:</strong> A web game to practice the core alphabets and basic vocabulary of the Japanese language.</p>
+            <p><strong></strong></p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <img class="games-top" id="company" src="img/games-bottom.png" alt="">
 
-<div class="logo"><a href="index.html">SURRIT</a></div>
+    <section class="container company">
+      <h2>Company</h2>
+      <p>Should we put something here? lol</p>
+      <div class="row">
+        <div class="col-sm-6 col-lg-3">
+          <img class="avatar" src="https://via.placeholder.com/150" alt="">
+          <h3>Angel G</h3>
+          <h4>Game Designer<br>Game Programmer</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco </p>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+          <img class="avatar" src="https://via.placeholder.com/150" alt="">
+          <h3>Nick B</h3>
+          <h4>Game Designer<br>Game Programmer<br>Web Developer</h4>
+          <p>enderit in  dolore eu fugiat atur. occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+          <img class="avatar" src="https://via.placeholder.com/150" alt="">
+          <h3>Terrell B</h3>
+          <h4>Something Cool</h4>
+          <p>L proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+          <img class="avatar" src="https://via.placeholder.com/150" alt="">
+          <h3>John D</h3>
+          <h4>Graphic Designer</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco </p>
+        </div>
+      </div>
+    </section>
 
-    <div class="sub-logo">A programming community.</div>
-    <div class="coming-soon"><p>Coming Soon..</p></div>
+    <section class="contact" id="contact">
+      <h2>Contact</h2>
+      <img width="150px" src="img/fuji.png" alt="Mount Fuji">
+      <form class="container" action="https://formspree.io/your@email.com" method="post">
+        <div class="row">
+          <div class="col-sm-12">
+
+            <div class="input-wrap">
+              <div class="form-group">
+                <label>First Name<br>
+                  <input class="" type="text" name="First Name" value="">
+                </label>
+              </div>
+
+              <div class="form-group">
+                <label>Last Name<br>
+                  <input class="" type="text" name="Last Name" value="">
+                </label>
+              </div>
+            </div>
+
+            <div class="input-wrap">
+              <div class="form-group">
+                <label>E-mail Address<br>
+                  <input class="" type="text" name="First Name" value="">
+                </label>
+              </div>
+
+              <div class="form-group">
+                <label>Request<br>
+                  <select>
+                    <option value="">Support</option>
+                  </select>
+                </label>
+              </div>
+            </div>
+
+
+            <div class="form-group">
+              <label>Message<br>
+                <textarea class=""></textarea>
+              </label>
+            </div>
+
+          </div>
+        </div>
+      </form>
+    </section>
+
+    <footer>
+      <nav>
+        <ul class="list-unstyled">
+          <a href="#">News</a> |
+          <a href="#games">Games</a> |
+          <a href="#company">Company</a> |
+          <a href="#contact">Contact</a>
+        </ul>
+      </nav>
+      <p>Copyright &copy; 2018 Surrit Studios</p>
+      <p>Web Design &amp; Development by <a href="https://hazumi.github.io/">Nicholas Burton</a></p>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
   </body>
-
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
 </html>
